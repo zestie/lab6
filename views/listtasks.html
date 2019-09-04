@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>ZC: Lists of Tasks</title>
+        <link rel="stylesheet" href="styles.css">
+        <h1>Zesty's Corner</h1>
+    </head>
+
+    <body>    
+        <h1>ZC: Tasks List</h1>
+        <a href="/"><h2>Home</h2></a>&nbsp;&nbsp;
+        <a href="/newtask"><h2>Add New Task</h2></a>&nbsp;&nbsp;
+        <a href="/delete"><h2>Delete Tasks</h2></a>&nbsp;&nbsp;
+        <a href="/updatetask"><h2>Update Tasks</h2></a><br><br>
+        <form>
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Assigned to</th>
+                    <th>Due Date</th>
+                    <th>Status</th>
+                    <th>Description</th>
+                </tr>
+                <% for(let i = 0; i < tasks.length; i++){ %>
+                <tr>
+                    <td><%= tasks[i].id %></td>
+                    <td><%= tasks[i].name %></td>
+                    <td><%= tasks[i].assign %></td>
+                    <td><%= tasks[i].due %></td>
+                    <td><%= tasks[i].status %></td>
+                    <td><%= tasks[i].desc %></td>
+                </tr>
+                <%} %>
+            </table>
+        </form>
+    </body>
+</html>

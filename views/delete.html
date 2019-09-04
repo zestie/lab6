@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>ZC: Add Task</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body> 
+        <h1>ZC: Tasks List</h1>
+        <a href="/"><h2>Home</h2></a>&nbsp;&nbsp;
+        <a href="/newtask"><h2>Add New Task</h2></a>&nbsp;&nbsp;
+        <a href="/listtasks"><h2>List Tasks</h2></a>&nbsp;&nbsp;
+        <a href="/updatetask"><h2>Update Tasks</h2></a><br><br>
+        <form action="/deletebyid" method="POST" align="right">
+            Task ID: &nbsp;<input type="text" name="id"></input><br>
+            <button><h4>Delete Task</h4></button>
+        </form><br><br>
+        <form action="/deletebystatus" method="POST" align="right">
+            <button><h4>Delete All Complete Tasks</h4></button>
+        </form>
+    </body>
+</html>

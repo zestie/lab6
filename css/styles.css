@@ -1,0 +1,64 @@
+body {
+    margin-left: 5%; 
+    background-image: url(tree_wallpaper.jpg);
+}
+img {
+    float: left;
+}
+
+h1 {
+    font: bold;
+}
+h2 {
+    display: inline;
+}
+
+a, h1, h2 {
+    color: #010170;
+}
+
+a:hover, h2:hover {
+    color: black;
+}
+
+table {
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+input[type=text], input[type=date], select {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #9fc3cf;
+    box-sizing: border-box;
+}
+
+form {
+    margin-left: 20%;
+    margin-right: 20%; 
+    border-style: solid; 
+    border-color: #9fc3cf; 
+    padding: 1%; 
+    background-color: #9fc3cf;
+}
+
+button {
+    background-color: whitesmoke;
+    color: #0f53a0;
+    /*padding: 5px 5px;*/
+    border-color: #9fc3cf;
+    cursor: pointer;
+    width: 75%;
+}
+
+button:hover {
+    opacity: 0.8;
+    background-color: #0f53a0;
+    font: bolder;
+    color: whitesmoke;
+}
