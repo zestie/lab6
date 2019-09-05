@@ -47,7 +47,7 @@ app.get('/', function(req, res) {
         add new document to the DB
 */
 app.get('/newtask', function(req, res) {
-    res.sendFile(__dirname + '/views/newtask.html')
+    res.sendFile(__dirname + '/views/newTask.html')
 });
 
 // POST method function for adding new tasks to list when user clicks the submit button
